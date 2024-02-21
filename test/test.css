@@ -1,0 +1,7 @@
+#dropdown-products {
+    display: none;
+  }
+  
+  #menu-products:hover #dropdown-products {
+    display: block;
+  }
