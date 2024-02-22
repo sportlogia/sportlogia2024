@@ -48,6 +48,7 @@ header .nav-custom button {
     background-color: var(--logia);
     color: white;
     font-weight: 600;
+    font-size: 18px;
     transition: 0.1s;
 }
 
@@ -80,6 +81,8 @@ header .nav-custom ul {
     text-align: center;
     color: white;
     transition: 0.1s;
+    font-size: 17px;
+    font-weight: 500;
 }
 
 .dropdown-item:hover {

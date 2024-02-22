@@ -1,0 +1,105 @@
+/* CONTENT */
+
+@import "global-style.css";
+
+.content {
+    padding: 40px 180px;
+    display: flex;
+    gap: 80px;
+    text-align: justify;
+    font-size: 15px;
+}
+
+.left-side {
+    flex-direction: column;
+    width: 65%;
+}
+
+.right-side {
+    width: 30%;
+}
+
+/* Left-side */
+
+.left-side h2 {
+    padding: 15px 0px;
+    text-align: left;
+}
+
+.left-side div {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* CHIEF */
+
+.chief {
+    border-top: 1px solid rgb(41, 64, 112);
+    border-bottom: 1px solid rgb(41, 64, 112);
+}
+
+.chief *,
+.senior-editors *,
+.associate-editors *,
+.admin * {
+    margin: 0;
+}
+
+.chief h3 {
+    padding: 10px 0px;
+}
+
+.chief h4,
+.chief p,
+.senior-editors h5,
+.senior-editors p,
+.associate-editors h5,
+.associate-editors p,
+.admin h5,
+.admin p {
+    padding: 0px 15px 10px;
+}
+
+.senior-editors,
+.associate-editors {
+    border-bottom: 1px solid rgb(41, 64, 112);
+}
+
+.senior-editors h4,
+.associate-editors h4,
+.admin h4 {
+    padding: 20px 0px 10px;
+}
+
+div .last {
+    padding-bottom: 20px;
+}
+
+/* Right-side */
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right-side a {
+    height: 300px;
+}
+
+.right-side p {
+    font-weight: 700;
+}
+
+.right-side img{
+    height: 220px;
+    width: 220px;
+    margin: 20px;
+    transition: 0.3s;
+}
+
+.right-side a:hover img {
+    height: 230px;
+    width: 230px;
+    transition: 0.3s;
+}
