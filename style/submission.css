@@ -1,0 +1,141 @@
+/* CONTENT */
+
+@import "global-style.css";
+
+.content {
+    padding: 40px 180px;
+    display: flex;
+    gap: 80px;
+    text-align: justify;
+    font-size: 15px;
+}
+
+.left-side {
+    flex-direction: column;
+    width: 65%;
+}
+
+.right-side {
+    width: 30%;
+}
+
+/* Left-side */
+
+.container {
+    width: 600px;
+    border: 2px solid var(--logia);
+    border-radius: 25px;
+    box-shadow: 0 0 5px var(--logia);
+    color: rgb(41, 64, 112);
+}
+
+.left-side h2 {
+    padding: 30px 0px;
+    margin: 0;
+    text-align: center;
+}
+
+.left-side h4 {
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.field-container {
+    padding: 20px 50px;
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-label {
+    width: 200px;
+    height: 40px;
+    margin: 0;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.form-input {
+    width: 300px;
+    padding-left: 5px;
+    border-color: var(--logia);
+}
+
+.file {
+    padding: 6px 0;
+    height: 40px;
+    width: 300px;
+}
+
+.form-input:hover {
+    border: 2px solid var(--sport);
+    box-shadow: 0px 0px 2px var(--sport);
+    outline: none;
+}
+
+.form-input:focus {
+    border: 2px solid var(--sport);
+    box-shadow: 0px 0px 2px var(--sport);
+    outline: none;
+}
+
+.submit-container {
+    justify-content: center;
+}
+
+.form-submit {
+    height: 45px;
+    width: 170px;
+    border: none;
+    background-color: var(--logia);
+    color: white;
+    font-weight: 600;
+    transition: 0.1s;
+}
+
+.form-submit:hover {
+    background-color: var(--sport);
+    transition: 0.1s;
+}
+
+
+
+
+
+/* Right-side */
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right-side a {
+    height: 300px;
+}
+
+.right-side p {
+    font-weight: 700;
+}
+
+.right-side img{
+    height: 220px;
+    width: 220px;
+    margin: 20px;
+    transition: 0.3s;
+}
+
+.right-side a:hover img {
+    height: 230px;
+    width: 230px;
+    transition: 0.3s;
+}

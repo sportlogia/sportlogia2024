@@ -1,0 +1,41 @@
+:root {
+    --logia: rgb(89,155,215);
+    --sport: rgb(168,188,69);
+}
+
+body {
+    padding: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h5 {
+    width: 600px;
+    padding-bottom: 30px;
+    line-height: 35px;
+    color: rgb(41, 64, 112);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(38, 134, 224);
+}
+
+.sub-btn {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    width: 250px;
+    border: none;
+    background-color: var(--logia);
+    color: white;
+    font-weight: 600;
+    transition: 0.1s;
+}
+
+.sub-btn:hover {
+    background-color: var(--sport);
+    transition: 0.1s;
+}
