@@ -20,8 +20,11 @@ $targetPath = $uploadDirectory . $fileName;
 
 // Check for file upload errors
 if ($_FILES['file']['error'] !== UPLOAD_ERR_OK) {
-    echo 'File upload error: ' . $_FILES['file']['error'];
-    exit;
+    // echo 'File upload error: ' . $_FILES['file']['error'];
+    // exit;
+    // Redirect to a different HTML page
+    header("Location: ../submission-error.html");
+    exit(); // Make sure to exit after sending the header to prevent further execution
 }
 
 if (move_uploaded_file($uploadedFile, $targetPath)) {
@@ -73,13 +76,26 @@ $mail->AddAttachment("uploads/$fileName");
     
 
     $mail->send();
-    echo 'Message has been sent';
+    // echo 'Message has been sent';
+    // if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submitButton"])) {
+        // Handle any processing you need before redirecting
+    
+        // Redirect to a different HTML page
+        header("Location: ../submission-success.html");
+        exit(); // Make sure to exit after sending the header to prevent further execution
+    
 } catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    // echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    // Redirect to a different HTML page
+    header("Location: ../submission-error.html");
+    exit(); // Make sure to exit after sending the header to prevent further execution
 }
 
 } else {
-    echo 'Error moving uploaded file to destination: ' . error_get_last()['message'];
+    // echo 'Error moving uploaded file to destination: ' . error_get_last()['message'];
+    // Redirect to a different HTML page
+    header("Location: ../submission-error.html");
+    exit(); // Make sure to exit after sending the header to prevent further execution
 }
 
 ?>
